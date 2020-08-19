@@ -11,7 +11,7 @@ const Ingredient = ingredient => {
     return (
         <li className={style.ingredient}>
         <input id={id} type="checkbox" className={style.checkbox}/>
-        <label for={id}>{ingredient.text}</label>
+        <label htmlFor={id}>{ingredient.text}</label>
         </li>
     )
 }
