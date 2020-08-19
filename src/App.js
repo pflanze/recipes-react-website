@@ -9,6 +9,7 @@ function App() {
   const [recipes, setRecipes] = useState([]);
   const [search, setSearch] = useState('');
   const [query, setQuery] = useState('vegetarian')
+  const [chosenRecipes, setChosenRecipes] = useState(new Map());
 
   useEffect(()=> {
     getRecipes();

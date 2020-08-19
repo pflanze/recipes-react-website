@@ -22,11 +22,15 @@ const Label = text => (
         </li>
 )
 
+const chosenRecipe = (isSelected) => {
+    
+};
 
 const Recipe = ({title, calories, image, ingredients, healthLabels }) => {
     return(
     <div className={style.recipe}>
     <h1>{title}</h1>
+            <label><input type="text" onChange={}/> chosen recipe</label>
     <section className={style.about}>
   <img src={image} alt="{title}" className={style.image} />
   <aside className={style.nutrition}>
