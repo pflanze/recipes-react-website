@@ -39,11 +39,13 @@ const [query, setQuery] = useState('vegetarian')
       <div className="recipes">
      {recipes.map(recipe=>(
        <Recipe
-                key={recipe.recipe.label}
-                title={recipe.recipe.label}
-                calories= {recipe.recipe.calories}
-                image= {recipe.recipe.image}
-                ingredients={recipe.recipe.ingredients}/>
+         key={recipe.recipe.label}
+         title={recipe.recipe.label}
+         calories= {recipe.recipe.calories}
+         image= {recipe.recipe.image}
+         ingredients={recipe.recipe.ingredients}
+         healthLabels={recipe.recipe.healthLabels}
+         />
      ))}
      </div>
     </div>

@@ -38,11 +38,16 @@ align-items: center;
   margin:0.5em 0rem;
 }
 
+.text{
+    margin: 0.1em 1.5rem;
+}
+
+
 .checkbox{
   padding: 5px;
   margin:0px 5px;
 }
 
-.checkbox:checked + span{
+.checkbox:checked + label{
 text-decoration: line-through;
 }
