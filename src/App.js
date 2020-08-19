@@ -6,9 +6,9 @@ function App() {
   const APP_ID = '2c15a1a3';
   const APP_KEY = 'ea62895795633e11ae58be941c08bf0d';
 
-const [recipes, setRecipes] = useState([]);
-const [search, setSearch] = useState('');
-const [query, setQuery] = useState('vegetarian')
+  const [recipes, setRecipes] = useState([]);
+  const [search, setSearch] = useState('');
+  const [query, setQuery] = useState('vegetarian')
 
   useEffect(()=> {
     getRecipes();
@@ -21,15 +21,16 @@ const [query, setQuery] = useState('vegetarian')
     console.log(data.hits);
   };
 
-    const updateSearch= e =>{
-      setSearch(e.target.value)
-    }
+  const updateSearch= e =>{
+    setSearch(e.target.value)
+  }
 
-    const getSearch = e =>{
-      e.preventDefault();
-      setQuery(search);
-      setSearch('');
-    }
+  const getSearch = e =>{
+    e.preventDefault();
+    setQuery(search);
+    setSearch('');
+  }
+
   return (
     <div className="App">
      <form onSubmit={getSearch} className = "search-form">
