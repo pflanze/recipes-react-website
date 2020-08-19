@@ -17,7 +17,7 @@ const Ingredient = ingredient => {
 }
 
 const Label = text => (
-        <li className={style.text}>
+        <li key={nextMId()} className={style.text}>
         <span>{text}</span>
         </li>
 )
